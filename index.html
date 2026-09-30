@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Moblem</title>
+<meta name="description" content="Moblem est un carnet de budget qui vit sur votre téléphone. Aucune donnée n'est collectée, rien n'est envoyé.">
+<!-- Aucune police ni script chargés depuis un autre serveur : une page qui
+     parle de confidentialité ne va pas chercher ses polices chez Google et
+     lui livrer l'adresse IP de ceux qui la lisent. -->
+<style>
+  :root {
+    --fond: #EFF3F9;
+    --carte: #FFFFFF;
+    --texte: #16181D;
+    --secondaire: #6E7684;
+    --accent: #2F6BD8;
+    --trait: #DDE4EE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #101319;
+      --carte: #1A1E26;
+      --texte: #F0F2F6;
+      --secondaire: #8B93A1;
+      --accent: #5B93E8;
+      --trait: #262B35;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 88px; }
+  .marque {
+    display: flex; align-items: center; gap: 14px;
+    padding-bottom: 28px; margin-bottom: 36px;
+    border-bottom: 1px solid var(--trait);
+  }
+  .marque .nom { font-size: 22px; font-weight: 600; letter-spacing: -0.2px; }
+  .pastille {
+    width: 44px; height: 44px; border-radius: 12px; flex: none;
+    background: linear-gradient(135deg, #63A3F6, #17368F);
+    color: #fff; font-weight: 600; font-size: 22px;
+    display: grid; place-items: center;
+  }
+  h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.4px; margin: 0 0 6px; }
+  .date { color: var(--secondaire); font-size: 14px; margin: 0 0 40px; }
+  h2 {
+    font-size: 19px; font-weight: 600; letter-spacing: -0.1px;
+    margin: 40px 0 10px;
+  }
+  p, li { color: var(--texte); }
+  .resume {
+    background: var(--carte); border-radius: 16px;
+    padding: 22px 24px; margin: 0 0 8px;
+  }
+  .resume p:first-child { margin-top: 0; }
+  .resume p:last-child { margin-bottom: 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .fort { font-weight: 600; }
+  .rien { color: var(--accent); font-weight: 600; font-size: 22px; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--trait);
+    color: var(--secondaire); font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    main { padding: 36px 16px 64px; }
+    h1 { font-size: 25px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="marque">
+    <div class="pastille">M</div>
+    <div class="nom">Moblem</div>
+  </div>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 30 septembre 2026</p>
+
+  <div class="resume">
+    <p>Moblem est un carnet de budget qui vit sur votre téléphone.</p>
+    <p>L'application ne crée aucun compte, ne demande aucune inscription, et
+    n'envoie vos informations à personne. Il n'y a ni publicité, ni mesure
+    d'audience, ni outil d'analyse. Personne, pas même l'éditeur de Moblem, ne
+    peut voir ce que vous y inscrivez.</p>
+  </div>
+
+  <h2>Ce que Moblem enregistre</h2>
+  <p>Pour fonctionner, l'application garde sur votre téléphone :</p>
+  <ul>
+    <li>le prénom que vous saisissez, s'il vous plaît d'en mettre un ;</li>
+    <li>vos enveloppes : leur nom, leur plafond, leur pictogramme ;</li>
+    <li>vos dépenses : le montant, la date, l'enveloppe concernée et la note
+    que vous y ajoutez ;</li>
+    <li>l'historique des mois passés, avec les plafonds qui étaient les vôtres
+    à l'époque ;</li>
+    <li>vos préférences : l'alerte à 80 %, et le thème clair ou sombre.</li>
+  </ul>
+  <p>C'est tout. Moblem ne demande ni votre numéro de téléphone, ni votre
+  adresse, ni votre position, ni l'accès à vos contacts, à vos photos ou à
+  votre appareil photo.</p>
+
+  <h2>Où ces informations sont enregistrées</h2>
+  <p>Dans un seul fichier, à l'intérieur de l'espace privé réservé à
+  l'application sur votre téléphone. Les autres applications installées ne
+  peuvent pas le lire.</p>
+
+  <h2>Ce qui n'est envoyé nulle part</h2>
+  <p class="rien">Rien.</p>
+  <p>Moblem ne communique avec aucun serveur. Ce n'est pas une promesse sur
+  l'honneur : sur Android, l'application publiée <span class="fort">ne demande
+  même pas la permission d'accéder à Internet</span>, et le système la lui
+  refuserait si elle essayait.</p>
+  <p>L'application n'utilise aucune bibliothèque de mesure d'audience, aucun
+  réseau publicitaire et aucun outil de suivi. Vos informations ne sont ni
+  vendues, ni louées, ni partagées, parce qu'elles ne quittent jamais votre
+  appareil.</p>
+
+  <h2>Les sauvegardes de votre téléphone</h2>
+  <p>Une réserve, et elle est importante.</p>
+  <p>Si la sauvegarde automatique de votre téléphone est activée — iCloud sur
+  iPhone, la sauvegarde Google sur Android — le fichier de Moblem peut en faire
+  partie, comme les données de vos autres applications. Cette sauvegarde est
+  gérée par Apple ou par Google, selon leurs propres règles, et Moblem n'y a
+  aucun accès.</p>
+  <p>Vous pouvez la désactiver dans les réglages de votre téléphone. Sachez
+  alors que vos informations ne seront plus récupérables si vous perdez
+  l'appareil.</p>
+
+  <h2>Effacer vos informations</h2>
+  <p>Supprimez l'application : le fichier part avec elle, définitivement. Il
+  n'y a aucune copie ailleurs, donc rien d'autre à demander à personne.</p>
+  <p>Si la sauvegarde automatique de votre téléphone était active, pensez aussi
+  à supprimer cette sauvegarde auprès d'Apple ou de Google.</p>
+
+  <h2>Les enfants</h2>
+  <p>Moblem ne s'adresse pas particulièrement aux enfants et ne collecte
+  sciemment aucune information les concernant. Comme l'application ne collecte
+  rien du tout, elle ne peut rien collecter sur qui que ce soit.</p>
+
+  <h2>Vos droits</h2>
+  <p>Comme vos informations restent sur votre téléphone et ne sont transmises à
+  personne, vous en gardez le contrôle à tout moment : vous pouvez les
+  consulter dans l'application, les modifier, ou les effacer en la supprimant.
+  Aucune demande n'a besoin d'être adressée à qui que ce soit.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si Moblem évoluait au point de collecter quoi que ce soit — par exemple si
+  une synchronisation entre plusieurs appareils était ajoutée un jour — cette
+  page serait mise à jour avant que la fonctionnalité n'arrive, et le
+  changement serait annoncé dans l'application.</p>
+
+  <h2>Nous contacter</h2>
+  <p>Pour toute question sur cette politique :
+  <span class="fort">[À COMPLÉTER : adresse e-mail de support]</span></p>
+
+  <footer>
+    Moblem est édité par
+    <span class="fort">[À COMPLÉTER : nom de l'éditeur]</span>.
+  </footer>
+
+</main>
+</body>
+</html>
