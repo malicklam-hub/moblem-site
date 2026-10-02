@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devenir testeur — Moblem</title>
+<meta name="description" content="Comment installer Moblem et participer au test avant sa publication.">
+<style>
+  :root {
+    --fond: #EFF3F9; --carte: #FFFFFF; --texte: #16181D; --secondaire: #6E7684;
+    --accent: #4E8FC9; --trait: #DDE4EE; --puce: #E6EEF8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #101319; --carte: #1A1E26; --texte: #F0F2F6; --secondaire: #8B93A1;
+      --accent: #76B4E2; --trait: #262B35; --puce: #1F2733;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px; line-height: 1.65; -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 88px; }
+  .marque {
+    display: flex; align-items: center; gap: 14px;
+    padding-bottom: 28px; margin-bottom: 36px; border-bottom: 1px solid var(--trait);
+  }
+  .marque .nom { font-size: 22px; font-weight: 600; letter-spacing: -0.2px; }
+  .pastille {
+    width: 44px; height: 44px; border-radius: 12px; flex: none;
+    background: linear-gradient(135deg, #71BFEA, #38528C);
+    color: #fff; font-weight: 600; font-size: 22px; display: grid; place-items: center;
+  }
+  h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.4px; margin: 0 0 12px; }
+  .chapeau { color: var(--secondaire); margin: 0 0 40px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 40px 0 10px; }
+  .carte { background: var(--carte); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
+  .carte p:first-child { margin-top: 0; }
+  .carte p:last-child { margin-bottom: 0; }
+  ol.etapes { list-style: none; counter-reset: e; padding: 0; margin: 16px 0; }
+  ol.etapes li {
+    counter-increment: e; position: relative; padding: 0 0 0 48px; margin: 0 0 22px;
+  }
+  ol.etapes li::before {
+    content: counter(e); position: absolute; left: 0; top: 1px;
+    width: 32px; height: 32px; border-radius: 10px; background: var(--puce);
+    color: var(--accent); font-weight: 600; display: grid; place-items: center;
+  }
+  .fort { font-weight: 600; }
+  .alerte {
+    background: var(--puce); border-radius: 16px; padding: 20px 24px; margin: 24px 0;
+  }
+  .alerte p:first-child { margin-top: 0; }
+  .alerte p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--trait);
+    color: var(--secondaire); font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    main { padding: 36px 16px 64px; }
+    h1 { font-size: 25px; } body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="marque">
+    <div class="pastille">M</div>
+    <div class="nom">Moblem</div>
+  </div>
+
+  <h1>Devenir testeur</h1>
+  <p class="chapeau">Merci d'accepter. Cette page explique quoi faire, en deux
+  minutes.</p>
+
+  <div class="carte">
+    <p><span class="fort">Moblem est un carnet de budget.</span> Vous décidez en
+    début de mois combien va à la nourriture, au transport, à la maison. Ensuite
+    vous notez vos dépenses, et l'application vous dit où vous en êtes.</p>
+    <p>Tout reste sur votre téléphone. Pas de compte à créer, pas de publicité,
+    pas besoin d'internet.</p>
+  </div>
+
+  <h2>Deux conditions</h2>
+  <p>Il vous faut un téléphone <span class="fort">Android</span>. Les iPhone ne
+  peuvent pas participer à ce test.</p>
+  <p>Et il faut <span class="fort">garder l'application installée quatorze
+  jours</span>. C'est Google qui l'exige avant d'autoriser la publication : si
+  quelqu'un désinstalle avant, le compte à rebours repart.</p>
+
+  <h2>Installer l'application</h2>
+  <p>Pour l'instant, Moblem s'installe depuis un fichier que Malick vous
+  envoie. Ce n'est pas encore le Play Store.</p>
+
+  <ol class="etapes">
+    <li>Ouvrez le fichier <span class="fort">Moblem-1.0.apk</span> qu'il vous a
+    envoyé, depuis WhatsApp ou depuis vos téléchargements.</li>
+    <li>Android demande l'autorisation d'installer depuis cette source.
+    Acceptez : c'est normal pour une application qui n'est pas encore sur le
+    Play Store.</li>
+    <li>Un second message peut dire que l'application n'est pas reconnue.
+    Choisissez <span class="fort">Installer quand même</span>.</li>
+    <li>Ouvrez Moblem, et créez vos enveloppes.</li>
+  </ol>
+
+  <div class="alerte">
+    <p><span class="fort">Une chose à savoir dès maintenant.</span> Quand Moblem
+    arrivera sur le Play Store, il faudra désinstaller cette version et
+    réinstaller l'autre. <span class="fort">Les dépenses saisies pendant cette
+    période ne suivront pas.</span></p>
+    <p>Utilisez donc l'application normalement, mais sachez que ce premier mois
+    est un essai : le vrai carnet commencera avec la version du Play Store.</p>
+  </div>
+
+  <h2>Plus tard, par le Play Store</h2>
+  <p>Quand la fiche Google sera prête, Malick vous enverra un lien
+  d'inscription. Ouvrez-le <span class="fort">depuis votre téléphone</span>,
+  avec le compte Google de ce téléphone — c'est le point où tout le monde se
+  trompe. Acceptez de devenir testeur, et l'application s'installera depuis le
+  Play Store comme n'importe quelle autre.</p>
+
+  <h2>Ce qui aide vraiment</h2>
+  <p>Dites ce qui vous a arrêté. Un mot que vous n'avez pas compris, un bouton
+  que vous avez cherché, un chiffre qui vous a semblé faux, un moment où vous
+  avez abandonné.</p>
+  <p>Les compliments font plaisir mais ne servent à rien. Ce qui sert, c'est
+  l'endroit exact où vous avez hésité.</p>
+
+  <footer>
+    Une question, un problème, une remarque :
+    <a href="mailto:malick.lam@gmail.com">malick.lam@gmail.com</a><br>
+    Ce que l'application fait de vos informations :
+    <a href="./">politique de confidentialité</a>.
+  </footer>
+
+</main>
+</body>
+</html>
