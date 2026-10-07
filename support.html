@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aide — Moblem</title>
+<meta name="description" content="Aide et assistance pour Moblem, le carnet de budget par enveloppes en francs CFA.">
+<!-- Aucune police ni script chargés depuis un autre serveur, comme sur les
+     autres pages du site. -->
+<style>
+  :root {
+    --fond: #EFF3F9;
+    --carte: #FFFFFF;
+    --texte: #16181D;
+    --secondaire: #6E7684;
+    --accent: #2F6BD8;
+    --trait: #DDE4EE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #101319;
+      --carte: #1A1E26;
+      --texte: #F0F2F6;
+      --secondaire: #8B93A1;
+      --accent: #5B93E8;
+      --trait: #262B35;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 88px; }
+  .marque {
+    display: flex; align-items: center; gap: 14px;
+    padding-bottom: 28px; margin-bottom: 36px;
+    border-bottom: 1px solid var(--trait);
+  }
+  .marque .nom { font-size: 22px; font-weight: 600; letter-spacing: -0.2px; }
+  .pastille {
+    width: 44px; height: 44px; border-radius: 12px; flex: none;
+    background: linear-gradient(135deg, #63A3F6, #17368F);
+    color: #fff; font-weight: 600; font-size: 22px;
+    display: grid; place-items: center;
+  }
+  h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.4px; margin: 0 0 6px; }
+  .date { color: var(--secondaire); font-size: 14px; margin: 0 0 40px; }
+  h2 {
+    font-size: 19px; font-weight: 600; letter-spacing: -0.1px;
+    margin: 40px 0 10px;
+  }
+  h3 {
+    font-size: 17px; font-weight: 600;
+    margin: 26px 0 6px;
+  }
+  p, li { color: var(--texte); }
+  .resume {
+    background: var(--carte); border-radius: 16px;
+    padding: 22px 24px; margin: 0 0 8px;
+  }
+  .resume p:first-child { margin-top: 0; }
+  .resume p:last-child { margin-bottom: 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .fort { font-weight: 600; }
+  a { color: var(--accent); }
+  .contact {
+    background: var(--carte); border-radius: 16px;
+    padding: 22px 24px; margin: 8px 0 0;
+  }
+  .contact p:first-child { margin-top: 0; }
+  .contact p:last-child { margin-bottom: 0; }
+  .adresse {
+    font-size: 20px; font-weight: 600;
+    display: inline-block; margin-top: 4px;
+  }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--trait);
+    color: var(--secondaire); font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    main { padding: 36px 16px 64px; }
+    h1 { font-size: 25px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="marque">
+    <div class="pastille">M</div>
+    <div class="nom">Moblem</div>
+  </div>
+
+  <h1>Aide</h1>
+  <p class="date">Dernière mise à jour : 7 octobre 2026</p>
+
+  <div class="resume">
+    <p>Moblem range votre argent en enveloppes. Vous décidez en début de mois
+    combien va à la nourriture, au transport, à la maison. Ensuite vous notez
+    vos dépenses, et vous voyez à tout moment ce qu'il vous reste.</p>
+    <p>Cette page répond aux questions les plus courantes. Si la vôtre n'y est
+    pas, écrivez-nous : l'adresse est en bas.</p>
+  </div>
+
+  <h2>Premiers pas</h2>
+
+  <h3>Comment créer mes enveloppes ?</h3>
+  <p>À la première ouverture, l'application vous propose des enveloppes
+  courantes — nourriture, transport, loyer, électricité, école, tontine… Vous
+  touchez celles qui vous concernent, puis vous indiquez pour chacune ce que
+  vous voulez y consacrer ce mois-ci.</p>
+  <p>Si aucune proposition ne correspond, touchez <span class="fort">Autre</span>
+  et nommez la vôtre.</p>
+
+  <h3>D'où vient mon budget ? Je ne l'ai jamais saisi.</h3>
+  <p>Votre budget est la somme de vos plafonds. Il ne se tape nulle part : il se
+  fabrique quand vous remplissez vos enveloppes, et il change dès que vous
+  modifiez l'une d'elles. C'est voulu — un budget inventé à part finirait
+  toujours par s'éloigner de la réalité.</p>
+
+  <h3>Comment noter une dépense ?</h3>
+  <p>Appuyez sur le bouton <span class="fort">+</span> au centre de la barre du
+  bas. Le montant, l'enveloppe, et c'est enregistré. La note et le jour sont
+  facultatifs.</p>
+
+  <h2>Au quotidien</h2>
+
+  <h3>Que veulent dire les couleurs des barres ?</h3>
+  <ul>
+    <li><span class="fort">Grise</span> : tout va bien.</li>
+    <li><span class="fort">Orange</span> : vous approchez de la limite de cette
+    enveloppe.</li>
+    <li><span class="fort">Rouge</span> : le plafond est dépassé.</li>
+  </ul>
+  <p>Un dépassement n'est jamais bloqué. Moblem vous prévient, mais c'est vous
+  qui décidez.</p>
+
+  <h3>J'ai fait une erreur. Comment corriger ?</h3>
+  <p>Touchez la dépense, dans l'accueil ou dans l'historique. Vous pouvez
+  changer son montant, son enveloppe, son jour, ou la supprimer.</p>
+
+  <h3>Puis-je changer un plafond en cours de mois ?</h3>
+  <p>Oui. L'application vous demandera si le nouveau plafond s'applique dès ce
+  mois-ci ou seulement au mois prochain, et vous dira ce que cela change à votre
+  budget avant que vous validiez. Les mois déjà passés, eux, ne bougent
+  jamais.</p>
+
+  <h3>Que devient l'argent non dépensé à la fin du mois ?</h3>
+  <p>Il ne se reporte pas. Chaque mois repart de vos plafonds, pour rester
+  comparable aux précédents. Si vous voulez mettre de l'argent de côté, créez
+  une enveloppe <span class="fort">Épargne</span> : elle se compte comme un
+  objectif atteint, pas comme une dépense.</p>
+
+  <h3>Comment revoir le guide ?</h3>
+  <p>Dans <span class="fort">Paramètres</span>, section
+  <span class="fort">Aide</span>, touchez
+  <span class="fort">Revoir le guide</span>. Les explications se remontreront
+  écran par écran, comme au premier jour.</p>
+
+  <h2>Vos données</h2>
+
+  <h3>Où sont enregistrées mes dépenses ?</h3>
+  <p>Sur votre téléphone, et nulle part ailleurs. Moblem ne crée aucun compte,
+  ne demande aucune inscription et n'envoie vos informations à personne.
+  L'application fonctionne entièrement hors ligne.</p>
+
+  <h3>Que se passe-t-il si je change de téléphone ?</h3>
+  <p>Vos enveloppes et vos dépenses sont sauvegardées avec le reste de votre
+  téléphone, à condition que votre sauvegarde habituelle soit activée. Il
+  n'existe pour l'instant aucune synchronisation entre deux appareils.</p>
+
+  <h3>Comment supprimer toutes mes données ?</h3>
+  <p>Supprimez l'application. Tout ce qu'elle contenait disparaît avec elle,
+  définitivement.</p>
+
+  <p>Le détail est dans notre
+  <a href="./">politique de confidentialité</a>.</p>
+
+  <h2>Nous écrire</h2>
+
+  <div class="contact">
+    <p>Une question, un problème, une idée — écrivez, on répond.</p>
+    <p><a class="adresse" href="mailto:malick.lam@gmail.com">malick.lam@gmail.com</a></p>
+    <p>Pour qu'on puisse vous aider vite, dites-nous votre modèle de téléphone
+    et ce que vous faisiez au moment du problème.</p>
+  </div>
+
+  <footer>
+    Moblem est édité par <span class="fort">Moblem</span>. —
+    <a href="./">Politique de confidentialité</a>
+  </footer>
+
+</main>
+</body>
+</html>
