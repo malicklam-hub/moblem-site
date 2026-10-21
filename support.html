@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aide — Moblem</title>
-<meta name="description" content="Aide et assistance pour Moblem, le carnet de budget par enveloppes en francs CFA.">
+<meta name="description" content="Aide et assistance pour Moblem, le carnet de dépenses par enveloppes en francs CFA.">
 <!-- Aucune police ni script chargés depuis un autre serveur, comme sur les
      autres pages du site. -->
 <style>
@@ -101,12 +101,15 @@
   </div>
 
   <h1>Aide</h1>
-  <p class="date">Dernière mise à jour : 7 octobre 2026</p>
+  <p class="date">Dernière mise à jour : 21 octobre 2026</p>
 
   <div class="resume">
-    <p>Moblem range votre argent en enveloppes. Vous décidez en début de mois
-    combien va à la nourriture, au transport, à la maison. Ensuite vous notez
-    vos dépenses, et vous voyez à tout moment ce qu'il vous reste.</p>
+    <p>Moblem est un carnet de dépenses rangé en enveloppes. Vous notez ce que
+    vous dépensez, et vous voyez à tout moment combien est parti depuis le
+    début du mois, et dans quelle enveloppe.</p>
+    <p>Les plafonds sont facultatifs. Vous pouvez en poser dès le premier jour
+    si vous les connaissez ; sinon, observez un mois et laissez Moblem vous en
+    proposer à partir de ce que vous avez réellement dépensé.</p>
     <p>Cette page répond aux questions les plus courantes. Si la vôtre n'y est
     pas, écrivez-nous : l'adresse est en bas.</p>
   </div>
@@ -116,16 +119,33 @@
   <h3>Comment créer mes enveloppes ?</h3>
   <p>À la première ouverture, l'application vous propose des enveloppes
   courantes — nourriture, transport, loyer, électricité, école, tontine… Vous
-  touchez celles qui vous concernent, puis vous indiquez pour chacune ce que
-  vous voulez y consacrer ce mois-ci.</p>
+  touchez celles qui vous concernent, et c'est tout ce qu'il faut pour
+  commencer.</p>
   <p>Si aucune proposition ne correspond, touchez <span class="fort">Autre</span>
   et nommez la vôtre.</p>
 
+  <h3>On me demande des montants et je ne les connais pas.</h3>
+  <p>Alors ne les donnez pas. L'écran des montants se passe entièrement : le
+  bouton du bas dit <span class="fort">Je verrai plus tard</span> tant que vous
+  n'avez rien rempli. Vous pouvez aussi n'en poser qu'un ou deux — le loyer,
+  le forfait — et laisser les autres vides.</p>
+  <p>C'est le sens de l'application : personne ne connaît ses montants avant
+  d'avoir vécu un mois avec eux.</p>
+
   <h3>D'où vient mon budget ? Je ne l'ai jamais saisi.</h3>
-  <p>Votre budget est la somme de vos plafonds. Il ne se tape nulle part : il se
-  fabrique quand vous remplissez vos enveloppes, et il change dès que vous
-  modifiez l'une d'elles. C'est voulu — un budget inventé à part finirait
-  toujours par s'éloigner de la réalité.</p>
+  <p>Votre budget est la somme des plafonds que vous avez posés. Il ne se tape
+  nulle part : il se fabrique quand vous remplissez une enveloppe, et il change
+  dès que vous en modifiez une. Si aucune enveloppe n'a de plafond, il n'y a
+  pas de budget, et l'application ne vous en invente pas.</p>
+
+  <h3>Que se passe-t-il à la fin du mois ?</h3>
+  <p>Moblem vous montre ce que vous avez dépensé, enveloppe par enveloppe, et
+  propose un plafond pour chacune : votre dépense arrondie au multiple de
+  5 000 FCFA au-dessus. Vous gardez, vous corrigez le chiffre, ou vous videz le
+  champ pour laisser cette enveloppe sans plafond.</p>
+  <p>Rien n'est appliqué sans votre accord, et <span class="fort">Plus
+  tard</span> est toujours là. Les plafonds retenus valent pour le mois en
+  cours ; le mois qui vient de finir, lui, ne bouge plus.</p>
 
   <h3>Comment noter une dépense ?</h3>
   <p>Appuyez sur le bouton <span class="fort">+</span> au centre de la barre du
@@ -134,7 +154,13 @@
 
   <h2>Au quotidien</h2>
 
-  <h3>Que veulent dire les couleurs des barres ?</h3>
+  <h3>Que veulent dire les barres des enveloppes ?</h3>
+  <p>Cela dépend de l'enveloppe, et c'est volontaire.</p>
+  <p><span class="fort">Sans plafond</span>, la barre montre la part que cette
+  enveloppe prend dans vos dépenses du mois. Elle ne juge rien : elle situe.
+  À côté, le montant dépensé.</p>
+  <p><span class="fort">Avec un plafond</span>, la barre se remplit vers la
+  limite, et sa couleur vous dit où vous en êtes :</p>
   <ul>
     <li><span class="fort">Grise</span> : tout va bien.</li>
     <li><span class="fort">Orange</span> : vous approchez de la limite de cette
@@ -143,6 +169,17 @@
   </ul>
   <p>Un dépassement n'est jamais bloqué. Moblem vous prévient, mais c'est vous
   qui décidez.</p>
+
+  <h3>Pourquoi Moblem ne me dit-elle pas ce qu'il me reste ?</h3>
+  <p>Parce qu'elle ne le sait pas. Entre un compte Wave, un peu d'Orange Money
+  et des billets dans la poche, personne n'a tout son argent au même endroit —
+  et Moblem ne voit aucun de ces endroits. Un chiffre intitulé « il vous
+  reste » serait faux la plupart du temps, et c'est le genre de faux qui fait
+  abandonner une application.</p>
+  <p>Elle vous dit donc ce qu'elle sait pour l'avoir reçu de vous : ce que vous
+  avez dépensé. <span class="fort">Il vous reste</span> n'apparaît qu'à propos
+  d'une enveloppe qui a un plafond, parce que ce plafond est une décision que
+  vous avez prise, pas un portefeuille qu'il faudrait deviner.</p>
 
   <h3>J'ai fait une erreur. Comment corriger ?</h3>
   <p>Touchez la dépense, dans l'accueil ou dans l'historique. Vous pouvez
@@ -156,15 +193,18 @@
 
   <h3>Que devient l'argent non dépensé à la fin du mois ?</h3>
   <p>Il ne se reporte pas. Chaque mois repart de vos plafonds, pour rester
-  comparable aux précédents. Si vous voulez mettre de l'argent de côté, créez
-  une enveloppe <span class="fort">Épargne</span> : elle se compte comme un
-  objectif atteint, pas comme une dépense.</p>
+  comparable aux précédents.</p>
+
+  <h3>Et l'épargne ?</h3>
+  <p>Créez une enveloppe <span class="fort">Épargne</span> : ce que vous y
+  mettez est compté à part, sous le nom <span class="fort">Mis de côté</span>,
+  et n'entre ni dans le total dépensé, ni dans les parts, ni dans les plafonds
+  proposés. Mettre de côté n'est pas dépenser.</p>
 
   <h3>Comment revoir le guide ?</h3>
-  <p>Dans <span class="fort">Paramètres</span>, section
-  <span class="fort">Aide</span>, touchez
-  <span class="fort">Revoir le guide</span>. Les explications se remontreront
-  écran par écran, comme au premier jour.</p>
+  <p>Ouvrez <span class="fort">Paramètres</span>, descendez tout en bas et
+  touchez le bouton rond <span class="fort">?</span>. Les explications se
+  remontreront écran par écran, comme au premier jour.</p>
 
   <h2>Vos données</h2>
 
